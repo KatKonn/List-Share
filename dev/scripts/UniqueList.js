@@ -96,10 +96,10 @@ export default class UniqueList extends React.Component {
 					<div className="formContainer">
 						<form className="toDoList" onSubmit={this.addItem}>
 							<label className="labelItem" htmlFor="item">Item:</label>
-							<input className="inputItem" type="text" name="item" onChange={this.handleChange} value={this.state.item} required autoComplete="off" placeholder="e.g Milk"/>
+							<input className="inputItem" type="text" name="item" onChange={this.handleChange} value={this.state.item} required autoComplete="off" placeholder="e.g Cheese"/>
 
 							<label className="labelNote" htmlFor="note">Notes:</label>
-							<input className="inputNote" type="text" name="notes" onChange={this.handleChange} value={this.state.notes} autoComplete="off" placeholder="something"/>
+							<input className="inputNote" type="text" name="notes" onChange={this.handleChange} value={this.state.notes} autoComplete="off" placeholder="e.g parmesan"/>
 
 							<button className="listButton">Add Item</button>
 
