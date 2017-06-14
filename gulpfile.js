@@ -9,6 +9,7 @@ const notify = require('gulp-notify');
 const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const concat = require('gulp-concat');
+const historyApiFallback = require('connect-history-api-fallback'); 
 
 gulp.task('styles', () => {
 	return gulp.src('./dev/styles/**/*.scss')
@@ -18,7 +19,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('js', () => {
-	return browserify('dev/scripts/app.js', {debug: true})
+	browserify('dev/scripts/app.js', {debug: true})
 		.transform('babelify', {
 			sourceMaps: true,
 			presets: ['es2015','react']
@@ -34,16 +35,19 @@ gulp.task('js', () => {
 		.pipe(reload({stream:true}));
 });
 
+
 gulp.task('bs', () => {
-	return browserSync.init({
-		server: {
-			baseDir: './'
-		}
-	});
+    browserSync.init({
+        server: {
+            baseDir: './'
+        },
+        middleware: [historyApiFallback()] // <-- add this line
+    });
 });
 
-gulp.task('default', ['bs','js','styles'], () => {
+gulp.task('default', ['js','bs', 'styles'], () => {
 	gulp.watch('dev/**/*.js',['js']);
 	gulp.watch('dev/**/*.scss',['styles']);
 	gulp.watch('./public/styles/style.css',reload);
 });
+

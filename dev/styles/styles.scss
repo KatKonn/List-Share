@@ -1,0 +1,272 @@
+@import './normalize.scss';
+
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.wrapper {
+	background-color: #5DB596;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+// Authorization Page
+
+.authForms {
+	overflow: auto;
+	text-align: center;
+	height: 100vh;
+	button {
+		margin-top: 30px;
+		width: 150px;
+		border: none;
+		background-color: white;
+		font-weight: bold;
+		padding: 5px;
+		color: #F5C250;
+	}
+}
+
+button:hover {
+	background-color: #F5C250;
+	color: white;
+}
+
+.formsContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+    margin: 0 auto;
+}
+
+.user-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 70px;
+	margin-top: 30px;
+	color: white;
+	width: 25%;
+	p {
+		color: #F5C250;
+		font-weight: bold;
+	}
+}
+
+label {
+	padding: 15px;
+}
+
+header {
+	margin: 0 auto;
+	width: 50%;
+    padding: 60px;
+    padding-bottom: 0px;
+    text-align: center;
+	    h1 {
+		font-family:'Caveat', cursive;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		font-size: 4rem;
+		color: white;
+		}
+			h2 {
+			font-size: 1.5rem;
+			color: #F5C250;
+			font-weight: bold;
+			margin-bottom: 0px;
+			}
+}
+
+.title {
+	font-family:'Caveat', cursive;
+	color: white;
+	font-size: 2rem;
+}
+
+i.fa.fa-pencil-pencil-square-o {
+	font-size: 4rem;
+}
+// CREATE LIST PAGE 
+
+.dashboard {
+	height: 100vh;
+}
+
+main {
+	margin: 0 auto;
+	text-align: center;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	clear: both;
+	 h1 {
+		font-family:'Caveat', cursive;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		font-size: 4rem;
+		color: white;
+		}
+			h2 {
+			font-size: 1.75rem;
+			color: #F5C250;
+			font-weight: bold;
+			margin-bottom: 0px;
+			}
+}
+
+.createList {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+	    button {
+			margin-top: 30px;
+			width: 150px;
+			border: none;
+			background-color: white;
+			font-weight: bold;
+			padding: 5px;
+			color: #F5C250;
+		}
+			button:hover {
+				background-color: #F5C250;
+				color: white;
+			}
+}
+
+
+.logOut {
+	font-size: 1.2rem;
+	margin: 15px;
+	float: right;
+	border: none;
+	background-color: white;
+	font-weight: bold;
+	padding: 5px;
+	color: #F5C250;
+}
+
+
+// Styling New List Information
+
+.listInfo {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    overflow: auto;
+    color: white;
+    line-height: 0rem;
+    p {
+    	font-size: 1.75rem;
+    }
+    .clickLink {
+    	color: #F5C250;
+    }
+}
+
+span.listURL {
+	color: #F5C250;
+}
+
+.uniqueLink {
+	color: white;
+	line-height: 2rem;
+}
+
+.uniqueLink:hover {
+	color: #F5C250;
+}
+
+//Unique List Styling
+
+.uniqueList {
+	height: 100vh;
+	margin: 0 auto;
+	text-align: center;
+	overflow: auto;
+	 h1 {
+		font-family:'Caveat', cursive;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		font-size: 4rem;
+		color: white;
+		clear: both;
+		}
+		h2 {
+			font-size: 2.5rem;
+			font-style: italic;
+			color: #F5C250;
+			font-weight: bold;
+			margin-bottom: 0px;
+		}
+	}
+
+.toDoList {
+	padding: 5px;
+	margin-top: 30px;
+	color: white;
+	margin: 0 auto;
+	 .listButton {
+			margin-top: 30px;
+			width: 150px;
+			border: none;
+			background-color: white;
+			font-weight: bold;
+			padding: 5px;
+			color: #F5C250;
+			margin-left: 30px;
+		}
+			.listButton:hover {
+				background-color: #F5C250;
+				color: white;
+			}
+}
+
+.listItem {
+	text-align: left;
+	margin: 0 auto;
+	width: 50%;
+	list-style-type: none;
+	border: 1px solid #F5C250;
+	padding: 15px;
+	background-color: rgba(0,0,0, 0.2);
+	margin-top: 10px;
+}
+
+button.removeListItem {
+	background: transparent;
+	border: none;
+	height: 0px;
+}
+
+i.fa.fa-times {
+	font-size: 1.2rem;
+	color: white;
+	font-style: italic;
+}
+
+i.fa.fa-times:hover {
+	color: #F5C250;
+}
+
+.postedNotes {
+	font-style: italic;
+	font-size: 1.5rem;
+}
+
+
+
+
+
+
