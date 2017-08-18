@@ -1,6 +1,5 @@
 @import './normalize.scss';
 
-
 body {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.5rem;
@@ -27,6 +26,8 @@ body {
 		font-weight: bold;
 		padding: 5px;
 		color: #F5C250;
+		border-radius: 20px;
+		transition: all 0.3s ease;
 	}
 }
 
@@ -72,13 +73,13 @@ header {
 		margin-bottom: 20px;
 		font-size: 4rem;
 		color: white;
-		}
+	}
 			h2 {
 			font-size: 1.5rem;
 			color: #F5C250;
 			font-weight: bold;
 			margin-bottom: 0px;
-			}
+		}
 }
 
 .title {
@@ -90,7 +91,8 @@ header {
 i.fa.fa-pencil-pencil-square-o {
 	font-size: 4rem;
 }
-// CREATE LIST PAGE 
+
+// Create List Page 
 
 .dashboard {
 	height: 100vh;
@@ -109,13 +111,13 @@ main {
 		margin-bottom: 20px;
 		font-size: 4rem;
 		color: white;
-		}
-			h2 {
+	}
+		h2 {
 			font-size: 1.75rem;
 			color: #F5C250;
 			font-weight: bold;
 			margin-bottom: 0px;
-			}
+		}
 }
 
 .createList {
@@ -133,13 +135,14 @@ main {
 			font-weight: bold;
 			padding: 5px;
 			color: #F5C250;
+			border-radius: 20px;
+			transition: all 0.3s ease;
 		}
 			button:hover {
 				background-color: #F5C250;
 				color: white;
 			}
 }
-
 
 .logOut {
 	font-size: 1.2rem;
@@ -148,8 +151,11 @@ main {
 	border: none;
 	background-color: white;
 	font-weight: bold;
-	padding: 5px;
 	color: #F5C250;
+	border-radius: 20px;
+	width: 90px;
+	padding: 5px;
+	transition: all 0.3s ease;
 }
 
 
@@ -202,7 +208,7 @@ span.listURL {
 		font-size: 4rem;
 		color: white;
 		clear: both;
-		}
+	}
 		h2 {
 			font-size: 2.5rem;
 			font-style: italic;
@@ -226,6 +232,8 @@ span.listURL {
 			padding: 5px;
 			color: #F5C250;
 			margin-left: 30px;
+			border-radius: 20px;
+			transition: all 0.3s ease;
 		}
 			.listButton:hover {
 				background-color: #F5C250;
@@ -241,7 +249,12 @@ span.listURL {
 	border: 1px solid #F5C250;
 	padding: 15px;
 	background-color: rgba(0,0,0, 0.2);
+	box-shadow: 2px 30px 30px rgba(0,0,0, 0.2);
 	margin-top: 10px;
+}
+
+ul.ulList {
+	padding-left: 0px;
 }
 
 button.removeListItem {
@@ -265,8 +278,14 @@ i.fa.fa-times:hover {
 	font-size: 1.5rem;
 }
 
-
-
-
-
-
+@media (max-width: 610px) {
+	.toDoList {
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		.listButton {
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+	}
+}
